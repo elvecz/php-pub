@@ -9,11 +9,9 @@ use App\Persistence\DatabaseManager;
 abstract class AbstractRepository
 {
 
-    private DatabaseManager $databaseManager; // skvela vec u php7.4 <- typed properties :)
 
-    public function __construct(DatabaseManager $databaseManager)
+    public function __construct(private DatabaseManager $databaseManager)
     {
-        $this->databaseManager = $databaseManager;
     }
 
     abstract public function save(): int;

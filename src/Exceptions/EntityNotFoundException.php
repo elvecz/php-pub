@@ -3,7 +3,9 @@ declare(strict_types=1);
 
 namespace App\Exceptions;
 
-class EntityNotFoundException extends \Exception
+use Exception;
+
+class EntityNotFoundException extends Exception
 {
 
 }

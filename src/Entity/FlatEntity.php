@@ -3,6 +3,8 @@ declare(strict_types=1);
 
 namespace App\Entity;
 
+use DateTimeImmutable;
+
 class FlatEntity implements AccommodateEntityInterface
 {
 
@@ -11,7 +13,7 @@ class FlatEntity implements AccommodateEntityInterface
         // todo
     }
 
-    public function rentedUntil(): \DateTimeImmutable
+    public function rentedUntil(): DateTimeImmutable
     {
         // todo
     }
